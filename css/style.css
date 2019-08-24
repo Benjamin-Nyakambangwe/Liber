@@ -13,5 +13,33 @@ body {
     text-align: center;
     height: 100vh;
     color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
+
+#time {
+    font-size: 8rem;
+    text-shadow: 10px;
+}
+
+h1{
+    margin-bottom: 3rem;
+  
 }
  
+h2 {
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 700px){
+    body {
+        background-position: center center;
+
+    }
+    #time {
+        font-size:6rem;
+    }
+}
