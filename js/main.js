@@ -43,7 +43,7 @@ function setBgGreet() {
         greeting.textContent = 'Hello There, ';
     }else {
         //Evening
-        document.body.style.backgroundImage = "url('./evening.jpg')";
+        document.body.style.backgroundImage = "url('./eveningg.jpg')";
         greeting.textContent = 'Hello There, ';
     }
 }
