@@ -25,7 +25,7 @@ function showTime(){
 
 // addzero
 function addZero(n) {
-    return (parseInt(n, 10) < 10 ? '0' : '') + n;   
+    return (parseInt(n, 10) < 10 ? '0' : '') + n;
 }
 
 //Set Background and Greeting
@@ -35,16 +35,16 @@ function setBgGreet() {
 
     if(hour < 12) {
         //Morning
-        document.body.style.backgroundImage = "url('./morning.jpg')";
-        greeting.textContent = 'Good Morning';
+        document.body.style.backgroundImage = "url('./morningg.jpg')";
+        greeting.textContent = 'Hello There, ';
     }else if(hour < 18) {
         //AfterNoon
         document.body.style.backgroundImage = "url('./afternoonn.jpg')";
-        greeting.textContent = 'Good Afternoon, ';
+        greeting.textContent = 'Hello There, ';
     }else {
         //Evening
         document.body.style.backgroundImage = "url('./evening.jpg')";
-        greeting.textContent = 'Good Evening';
+        greeting.textContent = 'Hello There, ';
     }
 }
 
@@ -55,7 +55,7 @@ function getName(){
     }else {
         name.textContent = localStorage.getItem('name');
     }
-} 
+}
 
 //Set name
 function setName(e) {
@@ -63,7 +63,7 @@ function setName(e) {
         // make sure enter is presed
         if(e.which == 13 || e.keycode == 13) {
             localStorage.setItem('name', e.target.innerText);
-            name.blur(); 
+            name.blur();
         }
     }else {
         localStorage.setItem('name', e.target.innerText);
@@ -84,7 +84,7 @@ function setFocus(e) {
         // make sure enter is presed
         if(e.which == 13 || e.keycode == 13) {
             localStorage.setItem('focus', e.target.innerText);
-            focus.blur(); 
+            focus.blur();
         }
     }else {
         localStorage.setItem('focus', e.target.innerText);
@@ -98,6 +98,5 @@ focus.addEventListener('blur', setFocus);
 
 //Run
 showTime();
-setBgGreet(); 
+setBgGreet();
 getName();
-getFocus();

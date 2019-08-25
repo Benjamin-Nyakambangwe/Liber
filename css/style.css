@@ -13,30 +13,56 @@ body {
     text-align: center;
     height: 100vh;
     color: white;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    
+  /*  height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+
+
 }
 
 #time {
     font-size: 8rem;
-    text-shadow: 10px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 h1{
     margin-bottom: 3rem;
-  
+    font-family: 'Roboto Slab', serif;
+    font-size: 54px;
+    text-shadow: 2px 2px 4px #000000;
+
 }
- 
+
 h2 {
     margin-bottom: 0.5rem;
-    opacity: 0.6;
+    font-family: 'Roboto', serif;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid #fff;
+    margin-top: 25px;
+    width: 250px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Roboto', serif;
+    padding: 3px 6px;
+}
+i {
+  display: inline;
+  margin-right: 18px;
+  color: silver;
 }
 
 @media (max-width: 700px){
     body {
         background-position: center center;
+        h
+
 
     }
     #time {
