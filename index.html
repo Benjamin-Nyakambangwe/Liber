@@ -10,21 +10,64 @@
     <title>Welcome</title>
 </head>
 <body>
-    <time id="time"></time>
+<div class="main-wrapper">
+  <div class="main-left">
+    <div class="calculator-grid" id="cally">
+          <div class="output">
+              <div class="previous-operand">123</div>
+              <div class="current-operand">456</div>
+          </div>
+          <button class="span-two">AC</button>
+          <button>DEL</button>
+          <button>/</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>*</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>+</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>-</button>
+          <button>.</button>
+          <button>0</button>
+          <button class="span-two">=</button>
+          
+          <div class="app-icons">
+          <div>
+            <i class="fa fa-calculator fa-lg "id="calc-icon" ></i>
+          </div>
+          <div>
+            <i class="fa fa-list-ul fa-lg calc-icon"></i>
+          </div>
+          <div>
+            <i class="fa fa-balance-scale fa-lg"></i>
+          </div>
+          </div>
+      </div>
+  </div>
 
+  <div  class="main-center">
+    <time id="time"></time>
     <h1>
         <span id="greeting"></span>
         <span id="name" contenteditable="true"></span>
     </h1>
-
     <h2>What Are We Looking For Today</h2>
     <h2 id="focus" contenteditable="true"></h2>
-
     <div>
       <form method="get" action="https://www.google.com/search">
-        <input type="text" name="q" size="31" value=""><i class="fa fa-google fa-lg"></i>
+        <input type="text" name="q" size="31" value="" id="web-search"><i class="fa fa-google fa-lg" id="search-engine"></i>
       </form>
      </div>
+  </div>
+
+  <div class="main-right">
+    <p class="lorem">extension by <br> Benjamin Nyakambangwe</p>
+  </div>
 
 
 

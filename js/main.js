@@ -2,7 +2,9 @@
 const time = document.getElementById('time'),
     greeting = document.getElementById('greeting'),
     name = document.getElementById('name'),
-    focus = document.getElementById('focus');
+    focus = document.getElementById('focus'),
+    calcIcon = document.getElementById('calc-icon'),
+    calculator = document.querySelector('.calculator-grid');
 
 //Show Time
 function showTime(){
@@ -35,15 +37,15 @@ function setBgGreet() {
 
     if(hour < 12) {
         //Morning
-        document.body.style.backgroundImage = "url('./morningg.jpg')";
+        document.body.style.backgroundImage = "url('./img/morning.jpg')";
         greeting.textContent = 'Hello There, ';
     }else if(hour < 18) {
         //AfterNoon
-        document.body.style.backgroundImage = "url('./afternoonn.jpg')";
+        document.body.style.backgroundImage = "url('./img/afternoon.jpg')";
         greeting.textContent = 'Hello There, ';
     }else {
         //Evening
-        document.body.style.backgroundImage = "url('./eveningg.jpg')";
+        document.body.style.backgroundImage = "url('./img/evening.jpg')";
         greeting.textContent = 'Hello There, ';
     }
 }
@@ -91,10 +93,31 @@ function setFocus(e) {
     }
 }
 
+function changeAppIconBg(e) {
+  calcIcon.style.color = 'black';
+}
+
+function restoreAppIconBg(e) {
+  calcIcon.style.color = 'white';
+}
+
+//Open Or Close APPS
+function openCloseApp(e) {
+  if (calculator.style.display != 'grid') {
+    calculator.style.display = 'grid';
+  } else {
+    calculator.style.display = 'none';
+  }
+}
+
 name.addEventListener('keypress', setName);
 name.addEventListener('blur', setName);
 focus.addEventListener('keypress', setFocus);
 focus.addEventListener('blur', setFocus);
+calcIcon.addEventListener('mouseover', changeAppIconBg);
+calcIcon.addEventListener('mouseout', restoreAppIconBg);
+calcIcon.addEventListener('click', openCloseApp);
+
 
 //Run
 showTime();
